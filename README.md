@@ -175,6 +175,7 @@ public class CurrentConditionsIconConverter : IMarkupExtension, IValueConverter
         }
     }
 }
+```
 
 That's all the cool Xamarin.Forms stuff that's going into the app - now let's take a peek at what's happening in Azure Functions!
 
