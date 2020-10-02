@@ -101,7 +101,7 @@ Learn more about data binding, MVVM, and building XAML-based Xamarin.Forms apps 
 
 ### Shell
 
-So let's talk about Xamarin.Forms Shell for a bit. Shell gives applications an opinionated way to do a user interface. Tabs. Flyout menus. [Navigation](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/navigation). This app only uses a subset of the [navigation functionality](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/navigation).
+So let's talk about Xamarin.Forms Shell for a bit. Shell gives applications an opinionated way to do a user interface. Tabs. Flyout menus. [Navigation](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/navigation?WT.mc_id=dotnetconf2019-github-masoucou). This app only uses a subset of the [navigation functionality](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/navigation?WT.mc_id=dotnetconf2019-github-masoucou).
 
 You can see the navigation happening in the `WeatherViewModel` class's `ExecuteSavedCitiesCommand`. 
 
