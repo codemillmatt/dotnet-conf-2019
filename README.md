@@ -16,7 +16,7 @@ Who wouldn't?
 
 It just so happens I did a live session for .NET Conf 2019 that demonstrates this app and gives a high level overview of all the concepts involved - in about 25 minutes!
 
-So [check it out](https://channel9.msdn.com/Events/dotnetConf/NET-Conf-2019/Build-Amazing-Cloud-Connected-Apps-With-Xamarin-Azure-and-App-Center?WT.mc_id=github-dotnetconf-masoucou) - and be sure to come back here for a more in-depth discussion.
+So [check it out](https://channel9.msdn.com/Events/dotnetConf/NET-Conf-2019/Build-Amazing-Cloud-Connected-Apps-With-Xamarin-Azure-and-App-Center?WT.mc_id=mobile-0000-masoucou) - and be sure to come back here for a more in-depth discussion.
 
 ## What Are We Going to Build?
 
@@ -43,16 +43,16 @@ Let's take a look at each of the components used to build this app in turn.
 
 Xamarin's claim to fame is that it allows you to build 100% completely native iOS and Android applications using C# and .NET. But it does more! You can also build macOS, UWP, tvOS, WatchOS, even Tizen applications using it too!
 
-You can find out how Xamarin works - it's techniques for [code sharing here](https://docs.microsoft.com/xamarin/get-started/what-is-xamarin?WT.mc_id=github-dotnetconf-masoucou). And you can find out how Xamarin.Forms extends that [code sharing to the user interface layer here](https://docs.microsoft.com/xamarin/get-started/what-is-xamarin-forms?WT.mc_id=github-dotnetconf-masoucou).
+You can find out how Xamarin works - it's techniques for [code sharing here](https://docs.microsoft.com/xamarin/get-started/what-is-xamarin?WT.mc_id=mobile-0000-masoucou). And you can find out how Xamarin.Forms extends that [code sharing to the user interface layer here](https://docs.microsoft.com/xamarin/get-started/what-is-xamarin-forms?WT.mc_id=mobile-0000-masoucou).
 
 In this application - we use Xamarin.Forms to build out the user interface and the application logic layer. In fact, the only code that runs on iOS or Android alone is the code which bootstraps Xamarin.Forms. It's boilerplate code added with the File->New process when creating a project. For our purposes - this application is 100% shared code!
 
 The app uses the following features of Xamarin.Forms:
 
-* [MVVM pattern](https://docs.microsoft.com/xamarin/xamarin-forms/enterprise-application-patterns/mvvm?WT.mc_id=github-dotnetconf-masoucou) - with [data binding](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/data-binding-basics?WT.mc_id=github-dotnetconf-masoucou)
-* [Shell](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/introduction?WT.mc_id=github-dotnetconf-masoucou)
-* [Messaging Center](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/messaging-center?WT.mc_id=github-dotnetconf-masoucou)
-* [Value Converters](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/converters?WT.mc_id=github-dotnetconf-masoucou)
+* [MVVM pattern](https://docs.microsoft.com/xamarin/xamarin-forms/enterprise-application-patterns/mvvm?WT.mc_id=mobile-0000-masoucou) - with [data binding](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/data-binding-basics?WT.mc_id=mobile-0000-masoucou)
+* [Shell](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/introduction?WT.mc_id=mobile-0000-masoucou)
+* [Messaging Center](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/messaging-center?WT.mc_id=mobile-0000-masoucou)
+* [Value Converters](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/converters?WT.mc_id=mobile-0000-masoucou)
 
 The app is built of 4 distinct pages:
 
@@ -101,7 +101,7 @@ Learn more about data binding, MVVM, and building XAML-based Xamarin.Forms apps 
 
 ### Shell
 
-So let's talk about Xamarin.Forms Shell for a bit. Shell gives applications an opinionated way to do a user interface. Tabs. Flyout menus. [Navigation](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/navigation). This app only uses a subset of the [navigation functionality](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/navigation).
+So let's talk about Xamarin.Forms Shell for a bit. Shell gives applications an opinionated way to do a user interface. Tabs. Flyout menus. [Navigation](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/navigation?WT.mc_id=mobile-0000-masoucou). This app only uses a subset of the [navigation functionality](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/navigation?WT.mc_id=mobile-0000-masoucou).
 
 You can see the navigation happening in the `WeatherViewModel` class's `ExecuteSavedCitiesCommand`. 
 
@@ -181,9 +181,9 @@ That's all the cool Xamarin.Forms stuff that's going into the app - now let's ta
 
 ## Azure Functions
 
-[Azure Functions](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=github-dotnetconf-masoucou) is Microsoft's serverless offering. And you can think of serverless as the next evolution to the "as-a-Service". This is Functions-as-a-Service. And you only have to worry about writing code. No operating system. No hardware. You don't even have to think about scaling. You just have to think about what's core to your application.
+[Azure Functions](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=mobile-0000-masoucou) is Microsoft's serverless offering. And you can think of serverless as the next evolution to the "as-a-Service". This is Functions-as-a-Service. And you only have to worry about writing code. No operating system. No hardware. You don't even have to think about scaling. You just have to think about what's core to your application.
 
-And our application is using Functions as something of a backing Web API. Functions can do more - and you can read about [bindings and triggers here](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?WT.mc_id=github-dotnetconf-masoucou).
+And our application is using Functions as something of a backing Web API. Functions can do more - and you can read about [bindings and triggers here](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?WT.mc_id=mobile-0000-masoucou).
 
 We're using HTTP triggers. Meaning anytime an HTTP request comes in - our function reacts to it. (And only while it's running do we get charged for it too!)
 
@@ -216,7 +216,7 @@ Then you'll be good to go.
 
 ### Invoking a Function From a Xamarin App
 
-There is nothing special calling an Azure Function from a Xamarin application. It's the same as [calling any web api](https://docs.microsoft.com/xamarin/cross-platform/data-cloud/web-services/?WT.mc_id=github-dotnetconf-masoucou).
+There is nothing special calling an Azure Function from a Xamarin application. It's the same as [calling any web api](https://docs.microsoft.com/xamarin/cross-platform/data-cloud/web-services/?WT.mc_id=mobile-0000-masoucou).
 
 ```language-csharp
 public async Task<WeatherInfo> GetWeatherInfo(double latitude, double longitude)
@@ -242,11 +242,11 @@ That `httpClient` variable is of the type `System.Net.HttpClient` - new'd up wit
 
 ## App Center
 
-Now [App Center](https://docs.microsoft.com/appcenter/?WT.mc_id=github-dotnetconf-masoucou). App Center is known for its DevOps functionality. You can hook it up to a source control repository and have it build on every push. Have it distribute to testers or the store. Have it track crashes and analytics.
+Now [App Center](https://docs.microsoft.com/appcenter/?WT.mc_id=mobile-0000-masoucou). App Center is known for its DevOps functionality. You can hook it up to a source control repository and have it build on every push. Have it distribute to testers or the store. Have it track crashes and analytics.
 
-But recently App Center has been developing a Mobile Backend as a Service functionality that makes it [easier to interact with Azure AD B2C](https://docs.microsoft.com/appcenter/auth/?WT.mc_id=github-dotnetconf-masoucou) for letting users create accounts and sign-in to your apps. They have also been working with Azure Cosmos DB to make it [better to work with data](https://docs.microsoft.com/appcenter/data/?WT.mc_id=github-dotnetconf-masoucou) - both online and off - seamlessly. Including having it work with with Identity so you can store personal data without having to worry about handling the tokens from the AD B2C instance yourself!
+But recently App Center has been developing a Mobile Backend as a Service functionality that makes it [easier to interact with Azure AD B2C](https://docs.microsoft.com/appcenter/auth/?WT.mc_id=mobile-0000-masoucou) for letting users create accounts and sign-in to your apps. They have also been working with Azure Cosmos DB to make it [better to work with data](https://docs.microsoft.com/appcenter/data/?WT.mc_id=mobile-0000-masoucou) - both online and off - seamlessly. Including having it work with with Identity so you can store personal data without having to worry about handling the tokens from the AD B2C instance yourself!
 
-The MBaaS portion of App Center does have a bit of ceremony to setup - so follow the [steps here for Identity](https://docs.microsoft.com/appcenter/sdk/auth/xamarin?WT.mc_id=github-dotnetconf-masoucou). And [here for Data](https://docs.microsoft.com/appcenter/sdk/data/xamarin?WT.mc_id=github-dotnetconf-masoucou). But once you're up and running interacting with them from a Xamarin app couldn't be easier. Seriously.
+The MBaaS portion of App Center does have a bit of ceremony to setup - so follow the [steps here for Identity](https://docs.microsoft.com/appcenter/sdk/auth/xamarin?WT.mc_id=mobile-0000-masoucou). And [here for Data](https://docs.microsoft.com/appcenter/sdk/data/xamarin?WT.mc_id=mobile-0000-masoucou). But once you're up and running interacting with them from a Xamarin app couldn't be easier. Seriously.
 
 To sign somebody in:
 
